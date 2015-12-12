@@ -8,10 +8,9 @@ import java.util.*;
 public final class PopularWords {
 
     public static List<String> getPopularWords(String text, int k) {
-
         List<String> list = new ArrayList<>(Arrays.asList(text.split(" ")));
 
-        Map<String, Integer> map = new HashMap<String, Integer>();
+        Map<String, Integer> map = new HashMap<>();
 
         for (String words : list) {
             if (words.trim().isEmpty()) {
